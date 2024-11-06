@@ -17,13 +17,14 @@ body{
     height: 750px;
     width: 0 auto;
     position: relative;
+    margin-bottom: 250px;
 }
  .travel::before{
     content:'';
     display: block;
     border: 1px dashed  #a1a1a1;
     position: absolute;
-    height: 700px;
+    height: 740px;
     width: 1509px;
     top: 123px;
     border-width: 2px;
@@ -43,22 +44,28 @@ body{
 }
 .menu img{
     padding-top: 14px;
+    padding-left: 36px;
 }
 .cabinet ul li:first-child {
     color: yellow;
 }
+.pero h1{
+    font-size: 74px;
+}
 .pero{
     padding-top: 130px;
+    padding-left: 36px;
     color: white;
     font-size: 35px;
     font-weight: 700px;
     position: relative;
 }
-.pero h2 {
-    font-size: 100px;
-    opacity: 0.1;
+.pero_img {
+    margin-top: 10px;
+    width: 760px;
 }
 .pero button{
+    display: flex;
     width: 220px;
     height: 50px;
     border-radius: 60px;
@@ -67,8 +74,79 @@ body{
     color: white;
     background-color: #0499DD;
     margin-top: 60px;
+    padding: 15px 55px;
 }
 .together img{
     position: absolute;
-    top: 200px;
+    top: 196px;
+    right: 470px;
 }
+.pero_icon{
+    position: absolute;
+    right: 20px;
+    top: 230px;
+}
+.pero_icon img {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8px;
+}
+.rectangle_img {
+    position: absolute;
+    right: 0px;
+    top: 637px;
+}
+.rectangle_img img{
+    padding-left: 20px;
+}
+.play_img{
+    position: absolute;
+    right: 400px;
+    top: 710px;
+}
+.excursions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+}
+.excursions h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: #0499DD;
+}
+.excursions p{
+    font-size: 12px;
+    font-weight: 500px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+.popular{
+    margin-left: 100px;
+}
+.swiper {
+    width: 0 auto;
+    height: 497px;
+  }
+.swiper-slide {
+    /* width: 360px;
+    height: 497px; */
+    text-align: center;
+    font-size: 18px;
+    background: #1a9a5f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.swiper-wrapper{
+    position: relative;
+}
+  .swiper-pagination{
+    position: absolute;
+  }
+  /* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */

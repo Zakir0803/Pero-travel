@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/style.css">
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <body>
      <header>
         <div class="travel">
@@ -22,15 +22,78 @@
                 </div>
                 <div class="pero">
                     <h1>ПУТЕШЕСТВУЙ</h1>
-                    <h2>PERO TRAVEL</h2>
+                    <img class="pero_img" src="./image/PERO TRAVEL (1).png" alt="">
                     <button>К экскурсиям </button>
                     <div class="together">
                         <img src="./image/вместе с.png" alt="">
                     </div>
+                    <div class="pero_icon">
+                        <img src="./image/vk 1.png" alt="">
+                        <img src="./image/inst 1.png" alt="">
+                        <img src="./image/facebook 1.png" alt="">
+                    </div>
                 </div>
+            </div>
+            <div class="rectangle_img">
+                <img src="./image/Rectangle 11.png" alt="">
+                <img src="./image/Rectangle 12.png" alt="">
+            </div>
+            <div class="play_img">
+                <img src="./image/Group 34.png" alt="">
             </div>
         </div>
      </header>
+     <main>
+        <section>
+            <div class="container">
+                <div class="excursions">
+                    <h2>Популярные экскурсии</h2>
+                    <p class="border">Смотреть все</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="popular">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">Slide 1</div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                      <div class="swiper-slide">Slide 4</div>
+                      <div class="swiper-slide">Slide 5</div>
+                      <div class="swiper-slide">Slide 6</div>
+                      <div class="swiper-slide">Slide 7</div>
+                      <div class="swiper-slide">Slide 8</div>
+                      <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+
+                  
+
+                  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+                  <script>
+                    var swiper = new Swiper(".mySwiper", {
+                      slidesPerView: 4,
+                      spaceBetween: 30,
+                      centeredSlides: true,
+                      pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                      },
+                      pagination: {
+                        el: ".swiper-pagination",
+                        type: "progressbar",
+      },
+                    });
+                  </script>
+                  
+            </div>
+        </section>
+     </main>
 
 
      <main></main>
