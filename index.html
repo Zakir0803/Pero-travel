@@ -6,8 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style/media.css">
+    
 <body>
-     <header>
+    <header>
         <div class="travel">
             <div class="container">
                 <div class="menu">
@@ -16,7 +18,7 @@
                         <ul>
                             <li>Главная</li>
                             <li>Экскурсии</li>
-                            <li>Личный кабинет</li>
+                            <li onclick="showPopup()" >Личный кабинет</li>
                         </ul>
                     </div>
                 </div>
@@ -28,22 +30,56 @@
                         <img src="./image/вместе с.png" alt="">
                     </div>
                     <div class="pero_icon">
-                        <img src="./image/vk 1.png" alt="">
-                        <img src="./image/inst 1.png" alt="">
+                        <a href="https://vk.com/" target="_blank">
+                            <img src="./image/vk 1.png" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="./image/inst 1.png" alt="">
+                        </a>
+                       <a href="https://www.facebook.com/?locale=ru_RU" target="_blank">
                         <img src="./image/facebook 1.png" alt="">
+                       </a>
+                    </div>
+                </div>
+                <div class="box_img">
+                    <div class="rectangle_img">
+                    <img src="./image/Rectangle 11.png" alt="">
+                    <img src="./image/Rectangle 12.png" alt="">
+                </div>
+                    <div class="play_img">
+                    <img src="./image/Group 34.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="rectangle_img">
-                <img src="./image/Rectangle 11.png" alt="">
-                <img src="./image/Rectangle 12.png" alt="">
-            </div>
-            <div class="play_img">
-                <img src="./image/Group 34.png" alt="">
+            <div class="popup">
+                <div class="box_1">
+                    <h2>Вход</h2>
+                    <img onclick="showPopup()" src="image/кнопки.png" alt="">
+                </div>
+                <div class="box_2">
+                    <p>У вас еще нету аккаунта ?</p>
+                    <h4>Зарегистрируйтесь</h4>
+                </div>
+                <div class="box_3">
+                    <button><img src="image/google.png" alt="">Goole</button>
+                    <button class="blu"> <img src="image/u_facebook-f.png" alt="">Facebook</button>
+                </div>
+                <div class="box_4">
+                    <input type="text" placeholder="Введите е-mail*">
+                    <input type="text" placeholder="Введиите пароль*">
+                </div>
+                <div class="box_5">
+                    <input type="checkbox" name="" id="">
+                    <p>Запомнить меня</p>
+                    <h4>Забыли пароль?</h4>
+                </div>
+                <div class="box_6">
+                    <button>ВОЙТИ</button>
+                </div>
             </div>
         </div>
-     </header>
-     <main>
+    </header>
+    <main>
         <section>
             <div class="container">
                 <div class="excursions">
@@ -52,51 +88,371 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="popular">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">Slide 1</div>
-                      <div class="swiper-slide">Slide 2</div>
-                      <div class="swiper-slide">Slide 3</div>
-                      <div class="swiper-slide">Slide 4</div>
-                      <div class="swiper-slide">Slide 5</div>
-                      <div class="swiper-slide">Slide 6</div>
-                      <div class="swiper-slide">Slide 7</div>
-                      <div class="swiper-slide">Slide 8</div>
-                      <div class="swiper-slide">Slide 9</div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                  </div>
-
-                  
-
-                  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-                  <script>
-                    var swiper = new Swiper(".mySwiper", {
-                      slidesPerView: 4,
-                      spaceBetween: 30,
-                      centeredSlides: true,
-                      pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true,
-                      },
-                      pagination: {
-                        el: ".swiper-pagination",
-                        type: "progressbar",
-      },
-                    });
-                  </script>
-                  
+        <section >
+            <div class="container">
+                <div class="popular">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div class="bridge">
+                                    <div class="bridge_info">
+                                        <p class="bus">Автобусный тур</p>
+                                        <h4>Обзорная по Сочи (из Адлера)</h4>
+                                        <div class="price">
+                                            <img src="./image/Frame 1.png" alt="">
+                                            <p>6 часов</p>
+                                            <img src="./image/time 1.png" alt="">
+                                            <p>618 ₽ </p>
+                                        </div>
+                                        <p>Приглашаем вас на экскурсию <br>
+                                            "Обзорная по Большому Сочи": <br>
+                                            Экскурсия начнется с подъёма на гору Большой <br> Ахун - это  высшая точка (665 метров) на <br> побережьи Сочи. На вершине горы Большой Ахун <br> есть смотровая башня, построенная в 1935-36 годах <br> по проекту архитектора С. И. Воробьева...</p>
+                                        <button>Подробнее</button>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="horse">
+                                    <div class="bridge_info">
+                                        <p class="bus">Конный тур</p>
+                                        <h4>Конные прогулки</h4>
+                                        <div class="price">
+                                            <img src="./image/Frame 1.png" alt="">
+                                            <p>1,5 часа</p>
+                                            <img src="./image/time 1.png" alt="">
+                                            <p>1 809 ₽ </p>
+                                        </div>
+                                        <p>Конные прогулки проходят в Лазурной долине. С <br> долины открывается красивый вид на море, горы <br> и лес. На всем пути следования экскурсии вас <br> будут сопровождать опытные инструктора. <br> Катание на лошадях или иппотерапия очень <br>полезна для детей и взрослых...</p>
+                                        <button>Подробнее</button>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="waterfall">
+                                    <div class="bridge_info">
+                                        <p class="bus">Квадротур</p>
+                                        <h4>Пасть дракона</h4>
+                                        <div class="price">
+                                            <img src="./image/Frame 1.png" alt="">
+                                            <p>2,5 часа</p>
+                                            <img src="./image/time 1.png" alt="">
+                                            <p>3 515 ₽</p>
+                                        </div>
+                                        <p>Маршрут на Квадроциклах проходит по горной <br> реке Мзымта вдоль белых скал и самшитовый лес <br> к водопаду Глубокий Яр или "Пасть Дракона" <br> (экскурсионное название). <br>
+                                            Высота водопада 41,5 метр - это один из самых <br> высоких водопадов Большого Сочи...</p>
+                                        <button>Подробнее</button>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="church">
+                                    <div class="bridge_info">
+                                        <p class="bus">Автобусный тур</p>
+                                        <h4>Женский монастырь</h4>
+                                        <div class="price">
+                                            <img src="./image/Frame 1.png" alt="">
+                                            <p>4 часа</p>
+                                            <img src="./image/time 1.png" alt="">
+                                            <p>618 ₽</p>
+                                        </div>
+                                        <p>Троице - Георгиевский женский монастырь расположен в селе Лесное в живописном месте, в котором гармонично сочетаются красота природы и красота архитектуры сотворенная руками человека.
+                                            Это удивительное место расположено совсем недалеко от Чёрного моря - всего в 20 километрах 
+                                            
+                                            </p>
+                                        <button>Подробнее</button>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="church">
+                                    <div class="bridge_info">
+                                        <p class="bus">Автобусный тур</p>
+                                        <h4>Обзорная по Сочи (из Адлера)</h4>
+                                        <div class="price">
+                                            <img src="./image/Frame 1.png" alt="">
+                                            <p>6 часов</p>
+                                            <img src="./image/time 1.png" alt="">
+                                            <p>618 ₽ </p>
+                                        </div>
+                                        <p>Приглашаем вас на экскурсию <br>
+                                            "Обзорная по Большому Сочи": <br>
+                                            Экскурсия начнется с подъёма на гору Большой <br> Ахун - это  высшая точка (665 метров) на <br> побережьи Сочи. На вершине горы Большой Ахун <br> есть смотровая башня, построенная в 1935-36 годах <br> по проекту архитектора С. И. Воробьева...</p>
+                                        <button>Подробнее</button>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                </div>
             </div>
         </section>
-     </main>
+        <section>
+            <div class="number_1">
+                <div class="container">
+                    <div class="number">
+                        <div class="mountains">
+                            <div class="about_us">
+                                <h2>О нас</h2>
+                                <p>PeroTravel - Первый онлайн-сервис по <br> бронированию экскурсий без очередей и <br> операторов. <br>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit, sed do eiusmod tempor incididunt ut labore et <br> dolore magna aliqua. Ut enim ad minim veniam, quis <br> nostrud exercitation ullamco laboris nisi ut aliquip ex <br> ea commodo consequat. </p>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit <br>voluptatem accusantium doloremque laudantium,<br> totam rem aperiam, eaque ipsa quae ab illo inventore <br> veritatis et quasi architecto beatae vitae dicta sunt <br> explicabo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>j
+        </section>
+        <section>
+            <div class="number_2">
+                <div class="container">
+                    <div class="red">
+                        <h2>Виды экскурсий</h2>
+                    </div>
+                    <div class="type_excursion">
+                        <div class="type_left">
+                            <div class="type_bus">
+                                <img src="./image/1.png" alt="">
+                                <div class="bus_1">
+                                    <h2>Автобусный</h2>
+                                    <p>Один из самых насыщенных впечатлениями, доступных по цене и популярных видов отдыха. Во время одной поездки можно посмотреть достопримечательности сразу нескольких городов, причем обойдется это едва ли не в разы дешевле классического экскурсионного тура с ночевками в отелях.</p>
+                                </div>
+                            </div>
+                            <div class="type_bus">
+                                <img src="./image/3.png" alt="">
+                                <div class="bus_1">
+                                    <h2>Яхтинг</h2>
+                                    <p>Это то же, что круиз на лайнере или прогулка на пароме, только на яхте больше свободы, размеры судна в разы меньше, нет назойливой команды, можно самостоятельно почувствовать себя капитаном, постоять за штурвалом. Именно здесь вы почувствуете величайшие просторы Черногор моря.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type_right">
+                            <div class="type_bus">
+                                <img src="./image/2.png" alt="">
+                                <div class="bus_1">
+                                    <h2>Джиппинг</h2>
+                                    <p>Это путешествие на автомобилях высокой проходимости с преодолением естественных препятствий, это экстремальный вид спорта и отдыха, представляющий собой прохождение туристического маршрута по бездорожью на автомобилях.</p>
+                                </div>
+                            </div>
+                            <div class="type_bus">
+                                <img src="./image/4.png" alt="">
+                                <div class="bus_1">
+                                    <h2>Каньонинг</h2>
+                                    <p>Это экстремально-спортивный вид отдыха, который заключается в преодолении каньонов (обводненных или нет) при помощи альпинистского и иного снаряжения, а иногда и вброд, но без лодок или иных плавсредств..</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="excursion_btn">
+                        <p>Выбирайте на нашем сайте экскурсию, которая подходит именно вам и <br> записывайтесь онлайн без очередей, просто и быстро!</p>
+                        <button onclick="excursions()">К экскурсиям</button>
+                    </div>
+                    <div class="excursions_type">
+                        <div class="tabs">
+                            <ul class="tabs__caption">
+                                <li class="active">Автобусный</li>
+                                <li>Яхтинг</li>
+                                <li>Джиппинг</li>
+                                <li>Каньонинг</li>
+                            </ul>
+                            <div class="cards active">
+                                <div class="card">
+                                    <img src="./image/zwde8ggie6bef2ewawem.jpg" alt="">
+                                    <div class="card_info">
+                                        <h3>Экскурсиям</h3>
+                                        <p>5000сом</p>
+                                        <button>Забронировать</button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./image/lyon-city-bus-1-jour-osldj0wxag3cfdt5pud6zandt945ol1yxuudq5kxnc.jpg" alt="">
+                                    <div class="card_info">
+                                        <h3>Экскурсиям</h3>
+                                        <p>5000сом</p>
+                                        <button>Забронировать</button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./image/Hemphill celebrity bus.jpg" alt="">
+                                    <div class="card_info">
+                                        <h3>Экскурсиям</h3>
+                                        <p>5000сом</p>
+                                        <button>Забронировать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards">
+                                <div class="card">
+                                    <img src="./image/c72f5173a6c73080efcfc6c607f39b9a.jpeg" alt="">
+                                    <div class="card_info">
+                                        <h3>Экскурсиям</h3>
+                                        <p>5000сом</p>
+                                        <button>Забронировать</button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./image/o46gjk-1467909667116169997_1200x800_717.webp" alt="">
+                                    <div class="card_info">
+                                        <h3>Экскурсиям</h3>
+                                        <p>5000сом</p>
+                                        <button>Забронировать</button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./image/638302937140578639.jpg.webp" alt="">
+                                    <div class="card_info">
+                                        <h3>Экскурсиям</h3>
+                                        <p>5000сом</p>
+                                        <button>Забронировать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards">
+                                <div class="card">
+                                    <img src="./image/cFZcym8vI3YGWpa9BWHr.jpg" alt="">
+                                    <div class="card_info">
+                                        <h3>Экскурсиям</h3>
+                                        <p>5000сом</p>
+                                        <button>Забронировать</button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./image/ekskursionnye_marshruty_po_abkhazii_00005-e1596535584912.jpeg" alt="">
+                                    <div class="card_info">
+                                        <h3>Экскурсиям</h3>
+                                        <p>5000сом</p>
+                                        <button>Забронировать</button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./image/4648_c14bd_src.jpg" alt="">
+                                    <div class="card_info">
+                                        <h3>Экскурсиям</h3>
+                                        <p>5000сом</p>
+                                        <button>Забронировать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards">
+                                <div class="card">
+                                    <img src="./image/267146207.jpg" alt="">
+                                    <div class="card_info">
+                                        <h3>Экскурсиям</h3>
+                                        <p>5000сом</p>
+                                        <button>Забронировать</button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./image/tour-1210.webp" alt="">
+                                    <div class="card_info">
+                                        <h3>Экскурсиям</h3>
+                                        <p>5000сом</p>
+                                        <button>Забронировать</button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./image/7e.jpg" alt="">
+                                    <div class="card_info">
+                                        <h3>Экскурсиям</h3>
+                                        <p>5000сом</p>
+                                        <button>Забронировать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="excursions">
+                        <h2>Галерея</h2>
+                        <p class="border">Смотреть все</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="big">
+            <div class="container">
+                <div class="box">
+                    <div class="number">
+                    <img class="picture_1" src="./image/1 (1).png" alt="">
+                    <img class="picture_2" src="./image/2 (1).png" alt="">
+                    <img class="picture_3" src="./image/3 (1).png" alt="">
+                    <img class="picture_4" src="./image/4 (1).png" alt="">
+                    <img class="picture_5" src="./image/5.png" alt="">
+                    <img class="picture_6" src="./image/6.png" alt="">
+                    <img class="picture_7" src="./image/7.png" alt="">
+                    <img class="picture_8" src="./image/8.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="forest_1">
+            <div class="container">
+                <div class="forest">
+                    <div class="forest_img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="logo_color">
+        <div class="container">
+            <div class="footer_info">
+                <div class="footer_left">
+                    <div class="footer_img">
+                        <img src="./image/logo_color 1.png" alt="">
+                        <ul>
+                            <li>Главная</li>
+                            <li>Экскурсии</li>
+                            <li>Личный кабинет</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_right">
+                    <div class="contact">
+                        <div class="whatssap_number">
+                            <img src="./image/wh 1.png" alt="">
+                            <p>+7 964 944 18 74</p>
+                        </div>
+                        <div class="whatssap_number">
+                            <img src="./image/tg 1.png" alt="">
+                            <p>+7 918 919 98 28</p>
+                        </div>
+                        <div class="whatssap_number">
+                            <img src="./image/tg 1.png" alt="">
+                            <p>Телеграм-бот PeroTravel</p>
+                        </div>
+                    </div>
+                    <div class="whatssap_numbe">
+                        <img src="./image/mail 1.png" alt="">
+                            <p>office@perotravel.ru</p>
+                    </div>
+                    <div class="logo_img">
+                        <img src="./image/vk 1 (1).png" alt="">
+                        <img src="./image/Group.png" alt="">
+                        <img src="./image/Vector.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     
+     <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop:true,
+          slidesPerView: 4,
+          spaceBetween: 30,
+          centeredSlides: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            type: "progressbar",
+          },
+        });
+      </script>
 
-     <main></main>
-     <footer></footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js.js"></script>
 </body>
 </html>

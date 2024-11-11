@@ -1,0 +1,73 @@
+@media ( max-width:800px){
+.container{
+    max-width: 500px;
+}
+.pero h1{
+    font-size:40px ;
+}
+.pero img{
+    width: 400px;
+}
+.together img{
+    width: 100px;
+    left: 300px;
+    top: 168px;
+}
+.pero_icon img{
+    width: 20px;
+    height: 30px;
+}
+.popup{
+    width: 300px;
+    height: 500px;
+    top: 40px;
+}
+.box_1{
+    font-size: 20px;
+}
+.box_2{
+    display: none;
+}
+.box_3{
+    display: none;
+}
+.box_4 input{
+    width: 200px;
+}
+.excursions p{
+   display: none;
+}
+.popular{
+    width:500px;
+
+}
+.swiper-wrapper{
+   column-gap: 240px;
+}
+.about_us{
+    width: 380px;
+    height: 386px;
+    left: 230px;
+}
+.about_us p{
+    font-size: 10px;
+    padding-left: 40px;
+    font-weight: bold;
+}
+.about_us h2{
+    padding: 43px 0 0 43px;
+}
+.type_excursion{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+.type_bus p{
+    width: 400px;
+    font-size: 10px;
+}
+.type_left{
+    margin-left: 100px;
+}
+
+}
